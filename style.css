@@ -37,33 +37,31 @@ section {
 }
 figure {
     display: inline-block;
-    position: relative;
     background-color: brown;   
     border: 5px blue;
-}
-img {
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
     column-span: 1;
 }
+.merommig-jpg {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+}
 .homepage-jpg {
-    display: inline-block;
+    display: block;
     position: relative;
     margin-right: 10px;
     column-span: 2;
 }
 
 figcaption {
-    position: absolute;
-    bottom: -20px;
+    text-align: center;
     margin-left: 10px;
+    bottom: -20px;
 }
 article {
     max-width: 50%;
-    display: inline;
+    display: block;
     text-align: center;
-    float: bottom;
 }
 
 footer {
