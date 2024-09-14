@@ -41,11 +41,7 @@ figure {
     border: 5px blue;
     column-span: 1;
 }
-.merommig-jpg {
-    display: block;
-    position: relative;
-    margin-right: 10px;
-}
+
 .homepage-jpg {
     display: block;
     position: relative;
@@ -53,11 +49,19 @@ figure {
     column-span: 2;
 }
 
+.merommig-jpg {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+}
+
 figcaption {
     text-align: center;
     margin-left: 10px;
     bottom: -20px;
+    ackground-image: radial-gradient()
 }
+
 article {
     max-width: 50%;
     display: block;
@@ -77,3 +81,5 @@ li:hover {
     border-style: solid;
     
 }
+
+@media 
