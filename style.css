@@ -33,20 +33,20 @@ nav ul li {
 section {
     display: block;
     column-count: 3;
-    background-color: blueviolet;
+    background-image: radial-gradient(purple, rgb(238, 143, 225));
 }
 figure {
     display: inline-block;
-    background-color: brown;   
-    border: 5px blue;
     column-span: 1;
+    background-color: rgb(238, 143, 225);   
+    border: 5px dashed purple;
 }
 
 .homepage-jpg {
     display: block;
     position: relative;
+    column-span: 1;
     margin-right: 10px;
-    column-span: 2;
 }
 
 .merommig-jpg {
@@ -59,13 +59,15 @@ figcaption {
     text-align: center;
     margin-left: 10px;
     bottom: -20px;
-    ackground-image: radial-gradient()
 }
 
 article {
-    max-width: 50%;
     display: block;
     text-align: center;
+    max-width: 100%;
+    max-height: fit-content;
+    columns: 1;
+    margin: 1vh;
 }
 
 footer {
@@ -82,4 +84,6 @@ li:hover {
     
 }
 
-@media 
+@media {
+    
+}
