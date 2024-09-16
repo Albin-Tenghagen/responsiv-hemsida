@@ -1,5 +1,4 @@
 html, body {
-    min-height: fill;
     background-color: black;
     color: antiquewhite;
     margin: 0px;
@@ -9,10 +8,10 @@ html, body {
 
 header {
     display: block;
-    text-align: center; 
+    text-align: center;
     top: 0;
     max-width: 100%;
-    margin: 0;
+    margin: 1vh;
     background-image: linear-gradient(to right, rgb(238, 143, 225) , purple);
     color: black;
 }
@@ -26,18 +25,19 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 2%;
-    border: 2px black;
-    border-style: dashed;
+    border: 2px dashed black;
+    
 }
 
 section {
-    display: block;
     column-count: 3;
+    margin: 1vh;
     background-image: radial-gradient(purple, rgb(238, 143, 225));
 }
 figure {
     display: inline-block;
     column-span: 1;
+    margin: 1vh;
     background-color: rgb(238, 143, 225);   
     border: 5px dashed purple;
 }
@@ -62,12 +62,16 @@ figcaption {
 }
 
 article {
-    display: block;
+    display: inline-block;
     text-align: center;
     max-width: 100%;
-    max-height: fit-content;
     columns: 1;
     margin: 1vh;
+    background-color: rgb(238, 143, 225);   
+    border: 5px dashed purple;
+}
+main article {
+    display: block;
 }
 
 footer {
@@ -83,7 +87,39 @@ li:hover {
     border-style: solid;
     
 }
+.activeLink {
+    background-color: aliceblue;
+    border-style: 2px solid;
+}
 
-@media {
-    
+@media (max-width: 400px) {
+    section {
+        column-count: 1;
+    }
+    body {
+        font-size: x-small;
+
+    }
+}
+
+
+@media (min-width: 401px) {
+    section {
+        column-count: 2;
+    }
+    body {
+        font-size: small;
+
+    }
+}
+
+
+@media (min-width: 1000px) {
+    section {
+        column-count: 3;
+    }
+    body {
+        font-size: medium;
+        
+    }
 }
