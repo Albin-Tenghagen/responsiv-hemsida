@@ -30,42 +30,30 @@ nav ul li {
 }
 
 section {
-    column-count: 3;
     margin: 1vh;
     background-image: radial-gradient(purple, rgb(238, 143, 225));
 }
 figure {
     display: inline-block;
-    column-span: 1;
     margin: 1vh;
     background-color: rgb(238, 143, 225);   
     border: 5px dashed purple;
 }
 
-.homepage-jpg {
+.homepage-jpg .merommig-jpg {
     display: block;
-    position: relative;
-    column-span: 1;
-    margin-right: 10px;
-}
-
-.merommig-jpg {
-    display: block;
-    position: relative;
     margin-right: 10px;
 }
 
 figcaption {
     text-align: center;
     margin-left: 10px;
-    bottom: -20px;
 }
 
 article {
     display: inline-block;
     text-align: center;
     max-width: 100%;
-    columns: 1;
     margin: 1vh;
     background-color: rgb(238, 143, 225);   
     border: 5px dashed purple;
@@ -76,7 +64,6 @@ main article {
 
 footer {
     text-align: center;
-    bottom: 0;
     width: 100%;
     background-color: aliceblue;
     color: black;
@@ -101,8 +88,6 @@ li:hover {
 
     }
 }
-
-
 @media (min-width: 401px) {
     section {
         column-count: 2;
@@ -112,8 +97,15 @@ li:hover {
 
     }
 }
-
-
+@media (min-width: 700px) {
+    section {
+        column-count: 3;
+    }
+    body {
+        font-size: medium;
+        
+    }
+}
 @media (min-width: 1000px) {
     section {
         column-count: 3;
